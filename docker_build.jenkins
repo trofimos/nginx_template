@@ -26,7 +26,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('site1') {
-                	sh 'docker build -t trofimovsemen/nginx-template-site1:latest . '
+                	sh 'docker build -t trofimovsemen/static-site1:latest . '
                 }
             }
         }
@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
-                docker push trofimovsemen/trofimovsemen/nginx-template-site1:latest
+                docker push trofimovsemen/trofimovsemen/static-site1:latest
                 '''
             }
         }
