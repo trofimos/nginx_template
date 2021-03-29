@@ -25,7 +25,7 @@ pipeline {
         stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
-                dir ('docker/toolbox') {
+                dir ('site1') {
                 	sh 'docker build -t trofimovsemen/toolbox:latest . '
                 }
             }
