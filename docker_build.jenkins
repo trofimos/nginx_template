@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
-                docker push trofimovsemen/trofimovsemen/static-site1:latest
+                docker push trofimovsemen/static-site1:latest
                 '''
             }
         }
